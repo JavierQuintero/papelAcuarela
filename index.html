@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPELERIA ACUARELA</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        nav{
+            background: rgb(92, 196, 161);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /*Botn menu*/
+        #btn-menu{
+            display: none;
+        }
+        .lbl-menu{
+            width: 50px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+            transform: translate(0, 50%);
+        }
+        .lbl-menu span{
+            position: absolute;
+            content: '';
+            background: #000;
+            width: 35px;
+            height: 5px;
+            border-radius: 10px;
+        }
+        .lbl-menu :nth-child(1){
+            transform: translateY(10px);
+        }
+        .lbl-menu :nth-child(3){
+            transform: translateY(-10px);
+        }
+        /*Buscador*/
+        #buscador{
+            height: 60%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Landing page</h2>
+    <nav>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="lbl-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <h1>PAPELERIA ACUARELA</h1>
+        <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+
+    </nav>
+    <div>
+        <img src="" alt="">
+        <h3>Nombre</h3>
+    </div>
+
+</body>
+</html>
