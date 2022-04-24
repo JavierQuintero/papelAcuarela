@@ -5,95 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAPELERIA ACUARELA</title>
-    <style>
-        *{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        nav{
-            background: rgb(92, 196, 161);
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        /*Botn menu*/
-        #btn-menu{
-            display: none;
-        }
-        .lbl-menu{
-            width: 50px;
-            height: 30px;
-            position: relative;
-            cursor: pointer;
-            transform: translate(0, 50%);
-        }
-        .lbl-menu span{
-            position: absolute;
-            content: '';
-            background: #000;
-            width: 35px;
-            height: 5px;
-            border-radius: 10px;
-        }
-        .lbl-menu :nth-child(1){
-            transform: translateY(10px);
-        }
-        .lbl-menu :nth-child(3){
-            transform: translateY(-10px);
-        }
-        /*Buscador*/
-        #buscador{
-            height: 30%;
-        }
-        .cont-card{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          height: 100vh;
-          padding: 5%;
-        }
-        /*tarjetaProducto*/
-        .card{
-          position: relative;
-         /* border: 1px solid #000;*/
-          box-shadow: 0 0 20px #ccc;
-          max-width: 250px;
-          height: 420px;
-          margin: 5px 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          flex-grow: 1;
-        }
-        .card img{
-          width: 90%;
-          margin-top: 15px;
-          position: relative;
-        }
-        .card h3{
-          font-size: .8em;
-        }
-        .btn-whatsapp{
-            width: 65px;
-            height: 65px;
-            background: rgb(15, 134, 15);
-            position: fixed;
-            right: 5%;
-            bottom: 5%;
-            border-radius: 50%;
-        }
-        .btn-whatsapp a img {
-            width: 100%;
-        }
-        @media screen and (max-width: 480px) {
-          .cont-card{
-            height: initial;
-          }
-          .card h3{
-            font-size: 1em;
-          }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h2>Landing page</h2>
@@ -114,12 +26,12 @@
           <p><b>$Valor</b></p>
       </div>
       <div class="card">
-          <img src="https://www.productosysuministros.com/web/upload/imagen/producto/producto_105_1614202011_1782293472.jpg" alt="">
+          <img src="https://graficagarcia.com/wp-content/uploads/2019/10/imprenta-grafica-garcia-lima-peru-cuadernos-ecologicos-corporativos-9.jpg" alt="">
           <h3>NombreProducto</h3>
           <p><b>$Valor</b></p>
       </div>
       <div class="card">
-          <img src="https://www.productosysuministros.com/web/upload/imagen/producto/producto_105_1614202011_1782293472.jpg" alt="">
+          <img src="https://th.bing.com/th/id/OIP._JWRbh6aFO2UfN0ZHXwlBwHaHa?pid=ImgDet&rs=1" alt="">
           <h3>NombreProducto</h3>
           <p><b>$Valor</b></p>
       </div>
