@@ -42,9 +42,45 @@
         }
         /*Buscador*/
         #buscador{
-            height: 60%;
+            height: 30%;
         }
-        
+        .cont-card{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          height: 100vh;
+          padding: 5%;
+        }
+        /*tarjetaProducto*/
+        .card{
+          position: relative;
+         /* border: 1px solid #000;*/
+          box-shadow: 0 0 20px #ccc;
+          max-width: 250px;
+          height: 30%;
+          margin: 10px 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 1;
+        }
+        .card img{
+          width: 90%;
+          margin-top: 15px;
+          position: relative;
+        }
+        .card h3{
+          font-size: .8em;
+        }
+        @media screen and (max-width: 480px) {
+          .cont-card{
+            height: initial;
+          }
+          .card h3{
+            font-size: 1em;
+          }
+        }
     </style>
 </head>
 <body>
@@ -58,11 +94,23 @@
         </label>
         <h1>PAPELERIA ACUARELA</h1>
         <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
-
     </nav>
-    <div>
-        <img src="" alt="">
-        <h3>Nombre</h3>
+    <div class="cont-card">
+      <div class="card">
+          <img src="https://www.productosysuministros.com/web/upload/imagen/producto/producto_105_1614202011_1782293472.jpg" alt="">
+          <h3>NombreProducto</h3>
+          <p><b>$Valor</b></p>
+      </div>
+      <div class="card">
+          <img src="https://www.productosysuministros.com/web/upload/imagen/producto/producto_105_1614202011_1782293472.jpg" alt="">
+          <h3>NombreProducto</h3>
+          <p><b>$Valor</b></p>
+      </div>
+      <div class="card">
+          <img src="https://www.productosysuministros.com/web/upload/imagen/producto/producto_105_1614202011_1782293472.jpg" alt="">
+          <h3>NombreProducto</h3>
+          <p><b>$Valor</b></p>
+      </div>
     </div>
 
 </body>
