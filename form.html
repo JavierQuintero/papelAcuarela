@@ -10,7 +10,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         body{
-            background: rgb(103, 247, 199);
+            background: #aa3939;
         }
         form{
             width: 350px;
@@ -21,6 +21,8 @@
             font-weight: 600;
             letter-spacing: 1.5px;
             padding: 3%;
+            color: #D46A6A;
+            text-shadow: 2px 2px 10px #801515;
         }
         h3,h4{
             margin: 0;
@@ -30,24 +32,26 @@
         h4{
             margin-bottom: 15px;
         }
+        
     </style>
 </head>
 <body>
     <h1>Registro de usuario</h1>
-    <form action="" method="post">
+    <form action="info.php" method="post">
         <h3>Papeleria Acuarela</h3>
         <h4>Registro</h4>
         <label for="nombre">Nombre:</label>
-        <input type="text" name="" id="nombre">
+        <input type="text" name="name" id="nombre">
         
         <label for="numId">ID:</label>
-        <input type="text" name="" id="numId">
+        <input type="text" name="id" id="numId">
         
-        <label for="genero">Genero:</label>
-        <input type="text" name="" id="genero">
-        
+        <label for="gender">Genero:<br/>
+        <input type="radio" name="gender" value="male" />Masculino <br />
+        <input type="radio" name="gender" value="female" />Femenino <br />
+        </label>
         <label for="tel">Telefono:</label>
-        <input type="text" name="" id="tel">
+        <input type="text" name="telefono" id="tel">
         
         <label for="e-mail">Email:</label>
         <input type="text" name="" id="e-mail">
