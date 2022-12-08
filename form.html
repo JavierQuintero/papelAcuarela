@@ -7,27 +7,26 @@
     <title>Formulario de usuario</title>
     <style>
         *{
+          margin: 0;
+          padding: 0;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        body{
-            background: #aa3939;
-        }
+        
         form{
-            width: 350px;
+            width: 320px;
             display: flex;
             flex-direction: column;
             font-size: 1.3em;
-            font-variant: small-caps;
             font-weight: 600;
             letter-spacing: 1.5px;
             padding: 3%;
             color: #D46A6A;
-            text-shadow: 2px 2px 10px #801515;
         }
         h3,h4{
             margin: 0;
             text-align: center;
             background: rgb(92, 196, 161);
+            border-radius: 5px;
         }
         h4{
             margin-bottom: 15px;
@@ -50,6 +49,7 @@
         <input type="radio" name="gender" value="male" />Masculino <br />
         <input type="radio" name="gender" value="female" />Femenino <br />
         </label>
+        
         <label for="tel">Telefono:</label>
         <input type="text" name="telefono" id="tel">
         
