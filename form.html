@@ -33,6 +33,13 @@
         }
         
     </style>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : '6LcDgq8jAAAAAC79u3MO0X2MmKB0XRszDao-CGrv'
+          });
+        };
+      </script>
 </head>
 <body>
     <h1>Registro de usuario</h1>
@@ -56,5 +63,11 @@
         <label for="e-mail">Email:</label>
         <input type="text" name="" id="e-mail">
     </form>
+    <div class="con">
+        <div id="html_element"></div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
 </body>
 </html>
