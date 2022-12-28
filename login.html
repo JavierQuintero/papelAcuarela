@@ -11,6 +11,11 @@
         }
         body{
             background: rgb(103, 247, 199);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         form{
             width: 250px;
@@ -29,20 +34,38 @@
             width: 100px;
             margin: 1%;
         }
+        
+
     </style>
+
+     <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : '6LcDgq8jAAAAAC79u3MO0X2MmKB0XRszDao-CGrv'
+          });
+        };
+      </script>
+    
 </head>
 <body>
     <h1>Papeleria acuarela</h1>
     <h4>login</h4>
-    <form action="">
+    <form action="?" method="post">
         <label for="user">User:</label>
         <input type="text" name="" id="user">
         <label for="contrasena">Password:</label>
         <input type="password" name="" id="contrasena">
         <br>
         <input type="reset" value="Reiniciar">
-        <input type="button" value="Validar">
+        <input type="submit" value="Validar">
         <input type="button" value="Cancelar">
     </form>
+    <div class="con">
+        <div id="html_element"></div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
 </body>
 </html>
