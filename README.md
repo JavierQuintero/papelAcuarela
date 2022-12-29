@@ -1,5 +1,5 @@
 # papelAcuarela
-####Code Blocks (Indented style)
+####Proyecto inicial
 
     <?php
         echo "Hello world!";
